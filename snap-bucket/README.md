@@ -3,7 +3,7 @@
 ### Elegant S3 uploads directly from the browser with built-in progress tracking.
 
 [![npm version](https://img.shields.io/npm/v/snap-bucket.svg?style=flat-flat&color=3178c6)](https://www.npmjs.com/package/snap-bucket)
-[![License](https://img.shields.io/github/license/underskore-studios/snap-bucket-sdk?style=flat-flat&color=44cc11)](https://github.com/underskore-studios/snap-bucket-sdk/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/sbn-raju/snap-bucket?style=flat-flat&color=44cc11)](https://github.com/sbn-raju/snap-bucket/blob/main/LICENSE)
 [![NPM Downloads](https://img.shields.io/npm/dm/snap-bucket.svg?style=flat-flat&color=ff69b4)](https://www.npmjs.com/package/snap-bucket)
 
 `snap-bucket` is the frontend companion SDK of the Snap Bucket ecosystem. It abstracts the complexity of requesting pre-signed S3 upload URLs, orchestrating multi-step uploads, managing Content-Type configuration, tracking binary upload progress, and handling network errors into a single, type-safe API call.
@@ -234,4 +234,4 @@ Ensure your backend has `express.json()` middleware configured **before** regist
 ---
 
 ## 📄 License
-MIT
+[![License](https://img.shields.io/github/license/sbn-raju/snap-bucket?style=flat-flat&color=44cc11)](https://github.com/sbn-raju/snap-bucket/blob/main/LICENSE)

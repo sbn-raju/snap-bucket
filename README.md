@@ -3,7 +3,7 @@
 ### Effortless S3 uploads. Zero server-side overhead. One simple API.
 
 [![npm version](https://img.shields.io/npm/v/snap-bucket.svg?style=flat-flat&color=3178c6)](https://www.npmjs.com/package/snap-bucket)
-[![License](https://img.shields.io/github/license/underskore-studios/snap-bucket-sdk?style=flat-flat&color=44cc11)](https://github.com/underskore-studios/snap-bucket-sdk/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/sbn-raju/snap-bucket?style=flat-flat&color=44cc11)](https://github.com/sbn-raju/snap-bucket/blob/main/LICENSE)
 [![NPM Downloads](https://img.shields.io/npm/dm/snap-bucket.svg?style=flat-flat&color=ff69b4)](https://www.npmjs.com/package/snap-bucket)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=flat-flat&logo=typescript)](https://www.typescriptlang.org/)
 

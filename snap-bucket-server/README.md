@@ -3,7 +3,7 @@
 ### Express middleware to generate secure, short-lived AWS S3 pre-signed upload URLs.
 
 [![npm version](https://img.shields.io/npm/v/snap-bucket-server.svg?style=flat-flat&color=3178c6)](https://www.npmjs.com/package/snap-bucket-server)
-[![License](https://img.shields.io/github/license/underskore-studios/snap-bucket-sdk?style=flat-flat&color=44cc11)](https://github.com/underskore-studios/snap-bucket-sdk/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/sbn-raju/snap-bucket?style=flat-flat&color=44cc11)](https://github.com/sbn-raju/snap-bucket/blob/main/LICENSE)
 
 `snap-bucket-server` is the backend companion SDK of the Snap Bucket ecosystem. It creates an Express-compatible router to dynamically validate and issue single-use S3 pre-signed upload URLs directly in response to metadata requests sent by the `snap-bucket` frontend library.
 
@@ -140,4 +140,4 @@ Direct browser PUT streams are blocked by S3 default policies. Add this CORS con
 ---
 
 ## 📄 License
-ISC
+[![License](https://img.shields.io/github/license/sbn-raju/snap-bucket?style=flat-flat&color=44cc11)](https://github.com/sbn-raju/snap-bucket/blob/main/LICENSE)
