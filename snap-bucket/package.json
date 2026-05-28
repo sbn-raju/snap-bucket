@@ -1,17 +1,19 @@
 {
   "name": "snap-bucket",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple S3 upload SDK using signed URLs",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "tsup src/index.ts --watch",
     "build": "tsup",
     "clean": "rm -rf dist"
   },
-   "keywords": [
+  "keywords": [
     "s3",
     "upload",
     "aws",
