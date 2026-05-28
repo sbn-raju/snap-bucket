@@ -1,0 +1,38 @@
+name: Publish snap-bucket-server
+
+on:
+  push:
+    tags:
+      - "snap-bucket-server-v*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: snap-bucket-server
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url:
+            https://registry.npmjs.org
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build package
+        run: npm run build
+
+      - name: Publish package
+        run:
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN:
+            ${{ secrets.NPM_TOKEN }}
