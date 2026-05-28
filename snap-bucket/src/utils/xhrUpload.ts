@@ -1,0 +1,42 @@
+export const xhrUpload = (
+  uploadUrl: string,
+  file: File,
+  onProgress?: (progress: number) => void
+): Promise<void> => {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+
+    xhr.open("PUT", uploadUrl);
+
+    xhr.setRequestHeader(
+      "Content-Type",
+      file.type
+    );
+
+    xhr.upload.onprogress = (event) => {
+      if (event.lengthComputable) {
+        const progress = Math.round(
+          (event.loaded / event.total) * 100
+        );
+
+        onProgress?.(progress);
+      }
+    };
+
+    xhr.onload = () => {
+      if (xhr.status >= 200 && xhr.status < 300) {
+        resolve();
+      } else {
+        reject(
+          new Error("Failed to upload file.")
+        );
+      }
+    };
+
+    xhr.onerror = () => {
+      reject(new Error("Upload failed."));
+    };
+
+    xhr.send(file);
+  });
+};
