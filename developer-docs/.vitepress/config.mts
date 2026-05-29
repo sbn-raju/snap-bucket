@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Snap Bucket",
+  base: "/snap-bucket",
   description: "Secure, lightweight S3 upload SDK ecosystem with zero server-side overhead and built-in progress bars.",
   themeConfig: {
     logo: '/assets/snap-bucket-home-image.png',
